@@ -6,6 +6,7 @@ This document lists some of the common commands used for `Git`.
     + [History](#history)
       - [Detailed](#detailed)
       - [Short](#short)
+      - [Pretty](#pretty)
     + [Clone](#clone)
       - [Https](#https)
       - [SSH](#ssh)
@@ -49,6 +50,16 @@ git shortlog
 
 git log --oneline --no-merges
 
+```
+
+#### Pretty
+
+```sh
+git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+```
+
+```
+git lg
 ```
 
 ### Clone
@@ -190,3 +201,4 @@ git push origin HEAD --force
 ## References
 
 1. [Treehouse](https://github.com/treehouse-dave/get-acquainted-with-git)
+2. [CheatSheet](https://github.com/vasanthk/git-tips-and-tricks)
